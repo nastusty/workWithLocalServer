@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -113,18 +114,20 @@
                     </div>
                 </div>
                 <div class="offer__slider-wrapper">
-                    <div class="offer__slide">
-                        <img src="img/slider/pepper.jpg" alt="pepper">
+                    <div class="offer__slider-inner">
+                        <div class="offer__slide">
+                            <img src="img/slider/pepper.jpg" alt="pepper">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/food-12.jpg" alt="food">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/olive-oil.jpg" alt="oil">
+                        </div>
+                        <div class="offer__slide">
+                            <img src="img/slider/paprika.jpg" alt="paprika">
+                        </div>
                     </div>
-                    <!-- <div class="offer__slide">
-                        <img src="img/slider/food-12.jpg" alt="food">
-                    </div>
-                    <div class="offer__slide">
-                        <img src="img/slider/olive-oil.jpg" alt="oil">
-                    </div>
-                    <div class="offer__slide">
-                        <img src="img/slider/paprika.jpg" alt="paprika">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -141,8 +144,8 @@
                     Ваш пол
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-                    <div class="calculating__choose-item">Мужчина</div>
+                    <div class="calculating__choose-item calculating__choose-item_active" id = 'female'>Женщина</div>
+                    <div class="calculating__choose-item" id = 'male'>Мужчина</div>
                 </div>
 
                 <div class="calculating__subtitle">
@@ -158,10 +161,10 @@
                     Выберите вашу физическая активность
                 </div>
                 <div class="calculating__choose calculating__choose_big">
-                    <div id="low" class="calculating__choose-item">Низкая активность </div>
-                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
-                    <div id="medium" class="calculating__choose-item">Умеренная активность</div>
-                    <div id="high" class="calculating__choose-item">Высокая активность</div>
+                    <div id="low" class="calculating__choose-item" data-ration = '1.2'>Низкая активность </div>
+                    <div id="small"  class="calculating__choose-item calculating__choose-item_active" data-ration = '1.375'>Невысокая активность</div>
+                    <div id="medium" class="calculating__choose-item" data-ration = '1.55'>Умеренная активность</div>
+                    <div id="high" class="calculating__choose-item" data-ration = '1.725'>Высокая активность</div>
                 </div>
 
                 <div class="calculating__divider"></div>
@@ -271,6 +274,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
